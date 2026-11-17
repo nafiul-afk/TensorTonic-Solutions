@@ -1,7 +1,6 @@
 def policy_gradient_loss(log_probs, rewards, gamma):
-    """
-    Returns the REINFORCE loss with a mean-return baseline.
-    """
+
+    
     T = len(rewards)
     G = [0.0] * T
     G[T - 1] = float(rewards[T - 1])
